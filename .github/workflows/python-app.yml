@@ -23,7 +23,8 @@ jobs:
     - name: setup python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7.5
+        python-version: '3.x'
+        architecture: 'x64'
     - name: launch DVT
       run: |
         python3 EHref_gfprobe_tet_rev3.py
