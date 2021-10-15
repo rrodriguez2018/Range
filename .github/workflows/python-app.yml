@@ -7,8 +7,8 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  schedule:
-    - cron: "*/10 * * * *"
+#   schedule:
+#     - cron: "*/10 * * * *"
   # Allows manual triggering
   workflow_dispatch:
 
@@ -23,7 +23,7 @@ jobs:
     - name: setup python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7.3
+        python-version: 3.7.5
     - name: launch DVT
       run: |
         python3 EHref_gfprobe_tet_rev3.py
