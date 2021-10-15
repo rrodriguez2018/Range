@@ -19,7 +19,3 @@ jobs:
     - uses: actions/checkout@v2
     - name: launch DVT
       run: EHref_gfprobe_tet_rev3.py
-    - name: List files in the repository
-      run: |
-        ls ${{ github.workspace }}
-      run: echo "This job's status is ${{ job.status }}."
