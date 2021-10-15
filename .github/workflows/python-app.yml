@@ -18,4 +18,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: launch DVT
-      run: EHref_gfprobe_tet_rev3.py
+      run: python3 EHref_gfprobe_tet_rev3.py
