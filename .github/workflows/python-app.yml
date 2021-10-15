@@ -16,6 +16,6 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - uses: actions/checkout@v2
     - name: launch DVT
-      run: python3 EHref_gfprobe_tet_rev3.py
+    - uses: actions/checkout@v2
+    - run: python3 EHref_gfprobe_tet_rev3.py
