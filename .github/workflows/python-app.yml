@@ -1,6 +1,6 @@
 # This workflow will run a DVT on a schedule
 
-name: Python application
+name: Python Range DVT
 
 on:
   push:
@@ -18,5 +18,12 @@ jobs:
     runs-on: self-hosted
 
     steps:
+    - name: checkout repo content
+      uses: actions/checkout@v2
+    - name: setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7.3
     - name: launch DVT
-      run: python3 EHref_gfprobe_tet_rev3.py
+      run: |
+        python3 EHref_gfprobe_tet_rev3.py
